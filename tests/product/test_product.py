@@ -7,7 +7,7 @@ def test_create_product() -> None:
     # Arrange
     product_data = {
         "id": "1",
-        "product_name": "Produto Teste",
+        "product_name": "Teste",
         "company_name": "Empresa Teste",
         "manufacturing_date": "2022-01-01",
         "expiration_date": "2023-01-01",
@@ -16,13 +16,13 @@ def test_create_product() -> None:
     }
 
     # Act
-    instance = Product(**product_data)
+    product = Product(**product_data)
 
     # Assert
-    assert instance.id == "1"
-    assert instance.product_name == "Produto Teste"
-    assert instance.company_name == "Empresa Teste"
-    assert instance.manufacturing_date == "2022-01-01"
-    assert instance.expiration_date == "2023-01-01"
-    assert instance.serial_number == "123456789"
-    assert instance.storage_instructions == "Armazenar em um lugar seguro"
+    assert product.id == "1"
+    assert product.product_name == "Teste"
+    assert product.company_name == "Empresa Teste"
+    assert product.manufacturing_date == "2022-01-01"
+    assert product.expiration_date == "2023-01-01"
+    assert product.serial_number == "123456789"
+    assert product.storage_instructions == "Armazenar em um lugar seguro"
