@@ -2,7 +2,6 @@ from inventory_report.reports.report import Report
 from inventory_report.inventory import Inventory
 from datetime import datetime
 from collections import Counter
-from inventory_report.importers import JsonImporter
 
 
 class SimpleReport(Report):
@@ -11,11 +10,6 @@ class SimpleReport(Report):
 
     def add_inventory(self, inventory: Inventory) -> None:
         self.inventories.append(inventory)
-        #  --------INVENTORIES---------
-        # [List[product], List[product]]
-        #   -inventory-
-
-        # product = dict
 
     def generate(self) -> str:
         now = datetime.today().date()
@@ -71,15 +65,3 @@ class SimpleReport(Report):
 
         largest_company = companies_count.most_common(1)[0][0]
         return largest_company
-
-
-path = "inventory_report/data/inventory.json"
-json_importer = JsonImporter(path)
-products = json_importer.import_data()
-
-inventory = Inventory(products)
-simple_report = SimpleReport()
-simple_report.add_inventory(inventory)
-
-teste = simple_report.generate()
-print(teste)
