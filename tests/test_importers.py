@@ -2,8 +2,9 @@ from abc import ABC
 
 import pytest
 
-from inventory_report.importers import CsvImporter, Importer, JsonImporter
+from inventory_report.importers import CsvImporter, Importer
 from inventory_report.product import Product
+from inventory_report.reports.simple_report import JsonImporter
 from tests.conftest import (
     generate_data_using_seed,
     mock_url,
