@@ -1,10 +1,15 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# Inventory Report
+
+### 👩🏻‍💻 Habilidades exercitadas
+* Conceitos de **P**rogramação **O**rientada a **O**bjetos em `Python`;
+* Leitura e escrita de arquivos `CSV` e `JSON`.
+
+### Como Executar
+1️⃣ Crie o ambiente virtual:
+```
+python3 -m venv .venv && source .venv/bin/activate
+```
+2️⃣ Instale as dependências:
+```
+python3 -m pip install -r dev-requirements.txt
+```
