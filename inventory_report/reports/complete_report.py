@@ -23,3 +23,15 @@ class CompleteReport(SimpleReport):
         )
 
         return stocked_products_str
+
+
+# from inventory_report.inventory import Inventory
+# from inventory_report.importers import JsonImporter
+# path = "inventory_report/data/inventory.json"
+# json_importer = JsonImporter(path)
+# products = json_importer.import_data()
+# inventory = Inventory(products)
+# complete = CompleteReport()
+# complete.add_inventory(inventory)
+# teste = complete.generate()
+# print(teste)
